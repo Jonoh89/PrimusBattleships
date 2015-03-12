@@ -1,0 +1,31 @@
+{
+  "name": "PrimusBattleships",
+  "version": "0.0.1",
+  "description": "Batleships 2 player game made with Primus, Engine.io, React and Flux",
+  "author": "Jonathan Holmlund",
+  "license": "ISC",
+  "main": "js/app.js",
+  "dependencies": {
+    "flux": "^2.0.1",
+    "hapi": "^8.2.0",
+    "keymirror": "^0.1.1",
+    "lodash": "^3.3.1",
+    "object-assign": "^2.0.0",
+    "primus": "^2.4.12",
+    "react": "^0.12.2"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "engine.io": "^1.5.1",
+    "reactify": "^1.0.0",
+    "watchify": "^2.4.0"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  },
+  "scripts": {
+    "start": "watchify -o js/bundle.js -v -d ."
+  }
+}
